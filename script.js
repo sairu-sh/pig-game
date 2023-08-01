@@ -50,7 +50,7 @@ btnRoll.addEventListener('click', function () {
 
     //2. display the die
     diceEl.classList.remove('hidden');
-    diceEl.src = `dice-${dice}.png`;
+    diceEl.src = `die_images/dice-${dice}.png`;
 
     //3. Check if rolled 1. if true, change player else add score to current score
     if (dice !== 1) {
@@ -72,7 +72,7 @@ btnHold.addEventListener('click', function () {
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
     //2.check if score is 100
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 30) {
       //finish the game
       playing = false;
       document
